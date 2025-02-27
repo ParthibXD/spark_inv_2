@@ -5,7 +5,11 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+<<<<<<< HEAD
     "dev": "nodemon node backend/index.js"
+=======
+    "dev": "nodemon -r dotenv/config --experimental-json-modules index.js"
+>>>>>>> 045a98e (block chain and database integration)
   },
   "author": "",
   "license": "ISC",
@@ -21,9 +25,24 @@
     "mongoose": "^8.10.2",
     "morgan": "^1.10.0",
     "multer": "^1.4.5-lts.1",
+<<<<<<< HEAD
     "node-fetch": "^3.3.2"
   },
   "devDependencies": {
+=======
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "ethers": "^6.13.5",
+    "hardhat": "^2.22.19",
+    "bcrypt": "^5.1.1",
+    "cloudinary": "^2.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose-aggregate-paginate-v2": "^1.0.7"
+
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.19",
+>>>>>>> 045a98e (block chain and database integration)
     "nodemon": "^3.1.9"
   }
 }

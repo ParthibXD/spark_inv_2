@@ -21,6 +21,7 @@ app.use(morgan("dev"));
 app.use(bodyParser.json());
 
 //routes import
+<<<<<<< HEAD
 //import userRouter from "./routes/user.routes.js";
 //import apiRoutes from "./routes/api.routes.js";
 /*
@@ -74,5 +75,14 @@ app.post("/api/gemini", async (req, res) => {
 //routes declaration
 //app.use("/api/v1/users", userRouter);
 //app.use("/api", apiRoutes);
+=======
+import userRouter from "./src/routes/user.router.js";
+import chatRouter from "./src/routes/chat.router.js";
+
+
+//routes declaration
+app.use("/api/v1/users", userRouter);
+app.use("/api/v1/chats", chatRouter);
+>>>>>>> 045a98e (block chain and database integration)
 
 export { app };
